@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Pizza</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/main.css">
+
+
+
+  </head>
+
+  <body>
+    <section class="pizza-container">
+      <header class="header">
+        <a href="index.html">
+          <img src="./src/images/logo.webp" />
+        </a>
+      </header>
+
+      <article class="pizza-form">
+        <form class="pizza-size" action="pizza-topping.html">
+            <div class="pizza-size-container">
+                <p>Pizzanızın boyutunu seçiniz</p>
+                <div class="select-size">
+                  <input type="radio" id="big" name="size" value="big" />
+                  <label for="big">Büyük</label>
+                </div>
+      
+                <div class="select-size">
+                  <input type="radio" id="medium" name="size" value="medium" />
+                  <label for="medium">Orta</label>
+                </div>
+      
+                <div class="select-size">
+                  <input type="radio" id="small" name="size" value="small" />
+                  <label for="small">Küçük</label>
+                </div>
+      
+                <p>Pizzanızın hamurunu seçiniz</p>
+                <div class="select-dough">
+                  <input type="radio" id="thick" name="dough" value="thick" />
+                  <label for="thick">Kalın</label>
+                </div>
+      
+                <div class="select-dough">
+                  <input type="radio" id="medium-d" name="dough" value="medium-d" />
+                  <label for="medium-d">Orta</label>
+                </div>
+      
+                <div class="select-dough">
+                  <input type="radio" id="thin" name="dough" value="thin" />
+                  <label for="thin">İnce</label>
+                </div>
+      
+            </div>
+            <button type="submit" class="btn" formaction="pizza-topping.html">
+            İleri
+          </button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

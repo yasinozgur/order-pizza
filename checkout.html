@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Pizza</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    
+  <link rel="stylesheet" href="./dist/main.css">
+
+  </head>
+
+  <body>
+    <section class="pizza-container">
+      <header class="header">
+        <a href="index.html"><img src="./src/images/logo.webp" /></a>
+      </header>
+
+      <article class="pizza-form" id="checkout">
+        <form class="pizza-checkout" id="checkout-form">
+          <div class="checkout">
+            <div class="knowledge">
+              <h3 class="personal">Kişi Bilgileri</h3>
+              <div class="input-group">
+                <label class="input-label">İsim:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="İsim"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label class="input-label">Soyisim:</label>
+                <input
+                  type="text"
+                  id="sname"
+                  name="sname"
+                  placeholder="Soyisim"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="email">E-posta:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label class="input-label" for="address">Adres:</label>
+              <textarea
+                id="address"
+                placeholder="Cadde, Sokak ve Bina No"
+                required
+              ></textarea>
+            </div>
+            <div class="input-group flex">
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                id="sameAddress"
+                name="sameAddress"
+              />
+              <label for="sameAddress"
+                >Fatura adresim ile teslimat adresim aynı</label
+              ><br />
+            </div>
+            <div class="input-group flex">
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                id="saveMyInfo"
+                name="saveMyInfo"
+              />
+              <label for="saveMyInfo"
+                >Bilgilerimi bir dahaki sefer için kaydet</label
+              >
+            </div>
+
+            <div class="pay">
+              <h3>Ödeme Bilgileri</h3>
+              <p>Ödeme Yöntemi:</p>
+
+
+              <div class="input-group flex">
+                <input type="radio" name="cardType" id="visapayment" />
+                <label class="radio-label" for="visapayment"
+                  >Visa Payment</label
+                >
+                <input type="radio" name="cardType" id="paypal" />
+                <label class="radio-label" for="paypal">PayPal</label>
+                <input type="radio" name="cardType" id="mastercard" />
+                <label class="radio-label" for="mastercard">Master Card</label>
+              </div>
+
+                
+              </div>
+            </div>
+
+            <div class="card-knowledge">
+              <h4 class="card">Kart Bilgileri:</h4>
+              <div class="input-group">
+                <label class="input-label" for="cardNumber"
+                  >Kart Numarası:</label
+                >
+                <input
+                  type="text"
+                  min="16"
+                  max="16"
+                  pattern="[0-9]{16,16}"
+                  id="cardNumber"
+                  placeholder="*** **** **** ****"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="cardHolderName"
+                  >Kart Sahibi:</label
+                >
+                <input
+                  type="text"
+                  id="cardHolderName"
+                  min="5"
+                  max="50"
+                  placeholder="Kart üzerindeki tam isim"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="expDate"
+                  >Son kullanma tarihi:</label
+                >
+                <input type="month" id="expDate" min="2022-10" required />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="cvv">CVV:</label>
+                <input
+                  type="text"
+                  id="cvv"
+                  min="3"
+                  max="3"
+                  pattern="[0-9]{3,3}"
+                  placeholder="***"
+                  required
+                />
+              </div>
+            </div>
+
+            <input
+              id="btn-login"
+              type="submit"
+              value="Ödeme Yap"
+              class="btn"
+              formaction="success.html"
+            />
+          </div>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

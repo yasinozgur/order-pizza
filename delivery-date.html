@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Pizza</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/main.css">
+
+
+
+  </head>
+
+  <body>
+    <section class="pizza-container">
+      <header class="header">
+        <a href="index.html">
+          <img src="./src/images/logo.webp" />
+        </a>
+      </header>
+
+      <article class="pizza-form">
+        <form class="delivery-date" action="checkout.html" id="delivery-date">
+          <div class="input-group">
+            <label for="expDate">Teslim Edilecek Tarih:</label>
+            <input
+              type="datetime-local"
+              id="expDate"
+              min="2022-10-18 00:00:00"
+              max="2022-10-30 00:00:00"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="address">Teslim Edilecek Adres:</label>
+            <textarea
+              placeholder="Adresi buraya yazınız..."
+              id="address"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn" formaction="checkout.html">
+            İleri
+          </button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
